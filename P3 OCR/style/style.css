@@ -1,0 +1,101 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
+/* Colors */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  background: #fff;
+}
+
+* a {
+  text-decoration: none;
+}
+
+.main {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_header {
+  font-family: "Shrikhand";
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.location {
+  background: #f3f3f3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-left: 43px;
+  gap: 10px;
+  color: #5a5a5a;
+  height: 40px;
+}
+.location_icon {
+  font-size: 0.8rem;
+}
+
+#location_btn {
+  border-style: none;
+  background: #f3f3f3;
+  display: flex;
+  justify-content: center;
+}
+#location_btn::-moz-placeholder {
+  color: #5a5a5a;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+#location_btn:-ms-input-placeholder {
+  color: #5a5a5a;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+#location_btn::placeholder {
+  color: #5a5a5a;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.explore {
+  width: 100%;
+}
+.explore_box {
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 35px 0;
+  gap: 10px;
+}
+.explore_title {
+  margin: 0;
+  font-size: 1.2rem;
+  padding: 0 80px;
+  font-weight: 700;
+}
+.explore_text {
+  margin: 0;
+  font-size: 0.95rem;
+  padding: 0 35px;
+}
+.explore_btn {
+  color: #fff;
+  box-shadow: 0 5px 10px 0 #FF79DA;
+  border-radius: 90px;
+  background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
+  border: none;
+  padding: 0 20px;
+  margin-top: 15px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,93 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background: #fff;
+}
+
+* a {
+    text-decoration: none;
+}
+
+.main{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_header {
+    font-family: 'Shrikhand';
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.location{
+    background: #f3f3f3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 43px;
+    gap: 10px;
+    color: darken(#f3f3f3, 60%);
+    height: 40px;
+
+    &_icon {
+        font-size: 0.8rem;
+    }
+}
+
+#location_btn{
+    border-style: none;
+    background: #f3f3f3;
+    display: flex;
+    justify-content: center;
+
+    &::placeholder{
+        color: darken(#f3f3f3, 60%);
+        font-size: 0.75rem;
+        font-weight: 600;
+    }
+}
+
+.explore{
+
+    width: 100%;
+
+    &_box{
+        background-color: #fafafa;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 35px 0;
+        gap: 10px;
+    }
+
+    &_title{
+        margin: 0;
+        font-size: 1.2rem;
+        padding: 0 80px;
+        font-weight: 700;
+    }
+
+    &_text{
+        margin: 0;
+        font-size: 0.95rem;
+        padding: 0 35px;
+    }
+    &_btn{
+        color: #fff;
+        box-shadow: 0 5px 10px 0 $color-secondary;
+        border-radius: 90px;
+        background: linear-gradient(180deg, $color-secondary 0%, $color-primary 100%);
+        border: none;
+        padding: 0 20px;
+        margin-top: 15px;
+    }
+}
