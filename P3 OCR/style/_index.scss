@@ -13,11 +13,9 @@ body{
     padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
-.logo_header {
+.header_logo {
     font-family: 'Shrikhand';
     font-size: 1.4rem;
     display: flex;
@@ -89,5 +87,30 @@ body{
         border: none;
         padding: 0 20px;
         margin-top: 15px;
+    }
+}
+
+.process{
+
+    padding: 35px 10px;
+
+    &_title{
+        margin: 0;
+    }
+
+    &_box{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &_stage{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        height: 50px;
+        border: 2px solid black;
+        border-radius: 30px;
     }
 }
