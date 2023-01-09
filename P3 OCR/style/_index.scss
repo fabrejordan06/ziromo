@@ -6,6 +6,7 @@ body{
 
 * a {
     text-decoration: none;
+    color: inherit;
 }
 
 .main{
@@ -21,7 +22,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40px;
+    height: 20px;
 }
 
 .location{
@@ -108,9 +109,20 @@ body{
     &_stage{
         display: flex;
         flex-direction: row;
+        align-items: center;
         gap: 15px;
         height: 50px;
+        border-radius: 15px;
+        background: #fafafa;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.13);
         border: 2px solid black;
-        border-radius: 30px;
+
+            &_number{
+                margin-left: -4px;
+            }
+
+            &_icon{
+                width: 16px;
+            }
     }
 }
