@@ -30,7 +30,7 @@ body {
 }
 
 .location {
-  background: #f3f3f3;
+  background-color: #e6e6e6;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -43,24 +43,23 @@ body {
 .location_icon {
   font-size: 0.8rem;
 }
-
-#location_btn {
+.location_btn {
   border-style: none;
-  background: #f3f3f3;
+  background-color: #e6e6e6;
   display: flex;
   justify-content: center;
 }
-#location_btn::-moz-placeholder {
+.location_btn::-moz-placeholder {
   color: #5a5a5a;
   font-size: 0.75rem;
   font-weight: 600;
 }
-#location_btn:-ms-input-placeholder {
+.location_btn:-ms-input-placeholder {
   color: #5a5a5a;
   font-size: 0.75rem;
   font-weight: 600;
 }
-#location_btn::placeholder {
+.location_btn::placeholder {
   color: #5a5a5a;
   font-size: 0.75rem;
   font-weight: 600;
@@ -70,7 +69,7 @@ body {
   width: 100%;
 }
 .explore_box {
-  background-color: #fafafa;
+  background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -80,8 +79,8 @@ body {
 }
 .explore_title {
   margin: 0;
-  font-size: 1.2rem;
-  padding: 0 80px;
+  font-size: 1.3rem;
+  padding: 0 75px;
   font-weight: 700;
 }
 .explore_text {
@@ -115,16 +114,58 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 15px;
-  height: 50px;
+  gap: 25px;
+  height: 55px;
   border-radius: 15px;
-  background: #fafafa;
+  background: #f6f6f6;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.13);
-  border: 2px solid black;
 }
 .process_stage_number {
-  margin-left: -4px;
+  width: 20px;
+  height: 20px;
+  margin-left: -8px;
+  background: #9356DC;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .process_stage_icon {
   width: 16px;
+  color: #5a5a5a;
+}
+.process_stage_text {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.restaurant {
+  background-color: #f6f6f6;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  background-color: #fff;
+  position: relative;
+}
+.label_up {
+  position: relative;
+}
+.label_pic {
+  position: relative;
+  height: 12rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.label_new {
+  position: absolute;
+  background-color: #99E2D0;
+  color: #1b6150;
+  top: 1rem;
+  right: 1rem;
 }/*# sourceMappingURL=style.css.map */

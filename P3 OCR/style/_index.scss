@@ -26,7 +26,7 @@ body{
 }
 
 .location{
-    background: #f3f3f3;
+    background-color: darken(#f3f3f3, 5%);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -39,27 +39,28 @@ body{
     &_icon {
         font-size: 0.8rem;
     }
-}
 
-#location_btn{
-    border-style: none;
-    background: #f3f3f3;
-    display: flex;
-    justify-content: center;
-
-    &::placeholder{
-        color: darken(#f3f3f3, 60%);
-        font-size: 0.75rem;
-        font-weight: 600;
+    &_btn{
+        border-style: none;
+        background-color: darken(#f3f3f3, 5%);
+        display: flex;
+        justify-content: center;
+    
+        &::placeholder{
+            color: darken(#f3f3f3, 60%);
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
     }
 }
+
 
 .explore{
 
     width: 100%;
 
     &_box{
-        background-color: #fafafa;
+        background-color: #f6f6f6;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -70,8 +71,8 @@ body{
 
     &_title{
         margin: 0;
-        font-size: 1.2rem;
-        padding: 0 80px;
+        font-size: 1.3rem;
+        padding: 0 75px;
         font-weight: 700;
     }
 
@@ -110,19 +111,64 @@ body{
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 15px;
-        height: 50px;
+        gap: 25px;
+        height: 55px;
         border-radius: 15px;
-        background: #fafafa;
+        background: #f6f6f6;
         box-shadow: 5px 5px 10px rgba(0,0,0,0.13);
-        border: 2px solid black;
 
             &_number{
-                margin-left: -4px;
+                width: 20px;
+                height: 20px;
+                margin-left: -8px;
+                background: $color-primary;
+                border-radius: 20px;
+                color: #fff;
+                font-size: 13px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
 
             &_icon{
                 width: 16px;
+                color: darken(#f3f3f3, 60%);
             }
+
+            &_text{
+                font-size: 0.9rem;
+                font-weight: 500;
+            }
+    }
+}
+
+.restaurant{
+    background-color: #f6f6f6;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.label{
+    background-color: #fff;
+    position: relative;
+
+    &_up{
+        position: relative;
+    }
+
+    &_pic{
+        position: relative;
+        height: 12rem;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &_new{
+        position: absolute;
+        background-color: $color-tertiary;
+        color: darken($color-tertiary, 50%);
+        top: 1rem;
+        right: 1rem;
     }
 }
