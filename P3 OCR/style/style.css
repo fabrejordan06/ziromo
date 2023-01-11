@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
 /* Colors */
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "sans-serif";
   margin: 0;
   background: #fff;
 }
@@ -143,8 +143,8 @@ body {
 
 .restaurant {
   background-color: #f6f6f6;
-  margin-top: 25px;
-  padding: 0 1rem;
+  margin: 25px 0 0 0;
+  padding: 0 16px 40px 0;
 }
 .restaurant_box {
   display: flex;
@@ -159,7 +159,7 @@ body {
 }
 .label_up {
   position: relative;
-  height: 12rem;
+  height: 10rem;
 }
 .label_pic {
   height: 100%;
@@ -183,5 +183,61 @@ body {
   position: relative;
   padding: 1rem;
   display: flex;
+  flex-direction: row;
+}
+.label_text {
+  display: flex;
   flex-direction: column;
+  gap: 0.1rem;
+}
+.label_name {
+  margin: 0;
+}
+.label_like {
+  cursor: pointer;
+}
+.label_like_on {
+  position: absolute;
+  right: 1.2rem;
+  top: 1.2rem;
+  color: #FF79DA;
+  opacity: 1;
+}
+.label_like_off {
+  position: absolute;
+  right: 1.2rem;
+  top: 1.2rem;
+  opacity: 0;
+}
+
+.footer {
+  background: #353535;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0 1.5rem 1rem;
+}
+.footer_logo {
+  font-family: "Shrikhand", "sans-serif";
+  font-size: 1.2rem;
+}
+.footer_links {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer_link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+.footer_link_text {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.fa-handshake-angle {
+  font-size: 0.8rem;
 }/*# sourceMappingURL=style.css.map */

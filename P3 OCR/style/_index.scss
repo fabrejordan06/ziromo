@@ -1,5 +1,5 @@
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", "sans-serif";
     margin: 0;
     background: #fff;
 }
@@ -144,8 +144,8 @@ body{
 
 .restaurant{
     background-color: #f6f6f6;
-    margin-top: 25px;
-    padding: 0 1rem;
+    margin: 25px 0 0 0;
+    padding: 0 16px 40px 0;
 
     &_box{
         display: flex;
@@ -161,7 +161,7 @@ body{
 
     &_up{
         position: relative;
-        height: 12rem;
+        height: 10rem;
     }
 
     &_pic{
@@ -187,6 +187,74 @@ body{
         position: relative;
         padding: 1rem;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
+
+    &_text{
+        display: flex;
+        flex-direction: column;
+        gap: 0.1rem;
+    }
+
+    &_name{
+        margin: 0;
+    }
+
+    &_like{
+
+        cursor: pointer;
+
+        &_on{
+            position: absolute;
+            right: 1.2rem;
+            top: 1.2rem;
+            color: $color-secondary;   
+            opacity: 1;
+        }
+
+        &_off{
+            position: absolute;
+            right: 1.2rem;
+            top: 1.2rem;
+            opacity: 0;
+        }
+    }
+}
+
+.footer{
+    background: #353535;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0 1.5rem 1rem;
+
+    &_logo{
+        font-family: "Shrikhand", "sans-serif";
+        font-size: 1.2rem;
+    }
+
+    &_links{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    &_link{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+
+        &_text{
+            margin: 0;
+            font-size: 1rem;
+        }
+
+    }
+
+}
+
+.fa-handshake-angle{
+    font-size: 0.8rem;
 }
