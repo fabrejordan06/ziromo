@@ -145,30 +145,48 @@ body{
 .restaurant{
     background-color: #f6f6f6;
     margin-top: 25px;
-    display: flex;
-    flex-direction: column;
+    padding: 0 1rem;
+
+    &_box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.5rem;
+    }
 }
 
 .label{
     background-color: #fff;
-    position: relative;
+    border-radius: 1rem;
 
     &_up{
         position: relative;
+        height: 12rem;
     }
 
     &_pic{
-        position: relative;
-        height: 12rem;
+        height: 100%;
         width: 100%;
         object-fit: cover;
+        border-radius: 1rem 1rem 0 0;
     }
 
     &_new{
         position: absolute;
         background-color: $color-tertiary;
         color: darken($color-tertiary, 50%);
-        top: 1rem;
-        right: 1rem;
+        top: 10px;
+        right: 10px;
+        border-radius: 2px;
+        font-size: 0.8rem;
+        padding: 6px 8px;
+        font-weight: 500;
+    }
+
+    &_down{
+        position: relative;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
     }
 }

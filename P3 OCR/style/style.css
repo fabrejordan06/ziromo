@@ -144,28 +144,44 @@ body {
 .restaurant {
   background-color: #f6f6f6;
   margin-top: 25px;
+  padding: 0 1rem;
+}
+.restaurant_box {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
 }
 
 .label {
   background-color: #fff;
-  position: relative;
+  border-radius: 1rem;
 }
 .label_up {
   position: relative;
+  height: 12rem;
 }
 .label_pic {
-  position: relative;
-  height: 12rem;
+  height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
 }
 .label_new {
   position: absolute;
   background-color: #99E2D0;
   color: #1b6150;
-  top: 1rem;
-  right: 1rem;
+  top: 10px;
+  right: 10px;
+  border-radius: 2px;
+  font-size: 0.8rem;
+  padding: 6px 8px;
+  font-weight: 500;
+}
+.label_down {
+  position: relative;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=style.css.map */
