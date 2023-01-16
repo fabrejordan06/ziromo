@@ -51,16 +51,19 @@ body {
 }
 .location_btn::-moz-placeholder {
   color: #5a5a5a;
+  opacity: 1;
   font-size: 0.75rem;
   font-weight: 600;
 }
 .location_btn:-ms-input-placeholder {
   color: #5a5a5a;
+  opacity: 1;
   font-size: 0.75rem;
   font-weight: 600;
 }
 .location_btn::placeholder {
   color: #5a5a5a;
+  opacity: 1;
   font-size: 0.75rem;
   font-weight: 600;
 }
@@ -99,7 +102,7 @@ body {
 }
 
 .process {
-  padding: 35px 10px;
+  padding: 35px 16px;
 }
 .process_title {
   margin: 0;
@@ -108,7 +111,7 @@ body {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
 }
 .process_stage {
   display: flex;
@@ -119,6 +122,7 @@ body {
   border-radius: 15px;
   background: #f6f6f6;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.13);
+  margin-left: 6px;
 }
 .process_stage_number {
   width: 20px;
@@ -144,7 +148,7 @@ body {
 .restaurant {
   background-color: #f6f6f6;
   margin: 25px 0 0 0;
-  padding: 0 16px 40px 0;
+  padding: 0 16px 40px 16px;
 }
 .restaurant_box {
   display: flex;
