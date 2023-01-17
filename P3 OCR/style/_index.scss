@@ -211,14 +211,14 @@ body{
             right: 1.2rem;
             top: 1.2rem;
             color: $color-secondary;   
-            opacity: 1;
+            opacity: 0;
         }
 
         &_off{
             position: absolute;
             right: 1.2rem;
             top: 1.2rem;
-            opacity: 0;
+            opacity: 1;
         }
     }
 }

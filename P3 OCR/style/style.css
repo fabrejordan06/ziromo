@@ -205,13 +205,13 @@ body {
   right: 1.2rem;
   top: 1.2rem;
   color: #FF79DA;
-  opacity: 1;
+  opacity: 0;
 }
 .label_like_off {
   position: absolute;
   right: 1.2rem;
   top: 1.2rem;
-  opacity: 0;
+  opacity: 1;
 }
 
 .footer {
@@ -244,4 +244,10 @@ body {
 
 .fa-handshake-angle {
   font-size: 0.8rem;
+}
+
+.header_arrow {
+  position: absolute;
+  top: 2rem;
+  bottom: 2rem;
 }/*# sourceMappingURL=style.css.map */
