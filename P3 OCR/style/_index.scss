@@ -17,8 +17,8 @@ body{
 }
 
 .header_logo {
-    font-family: 'Shrikhand';
-    font-size: 1.4rem;
+    font-family: "Shrikhand", "sans-serif";
+    font-size: 1.6rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -229,6 +229,7 @@ body{
     display: flex;
     flex-direction: column;
     padding: 1rem 0 1.5rem 1rem;
+    position: relative;
 
     &_logo{
         font-family: "Shrikhand", "sans-serif";
