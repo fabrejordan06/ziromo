@@ -316,6 +316,7 @@ body {
   height: 0.2rem;
 }
 .bloc_item {
+  padding: 0.9rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -323,4 +324,123 @@ body {
   background-color: #fff;
   border-radius: 1rem;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.13);
+  overflow: hidden;
+  cursor: pointer;
+}
+.bloc_item:hover .bloc_check {
+  margin: -1rem -1rem -1rem 0rem;
+  -webkit-animation: scale-up-hor-right 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-hor-right 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.bloc_item:hover .bloc_check_icon {
+  -webkit-animation: rotate-center 0.5s ease-in-out both;
+  animation: rotate-center 0.5s ease-in-out both;
+}
+.bloc_text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  flex: 1;
+}
+.bloc_text_name {
+  font-size: 16px;
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.bloc_text_desc {
+  font-size: 14px;
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.bloc_price {
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0 0.9rem 0 0.7rem;
+  transition-duration: 1s;
+}
+.bloc_check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+  background-color: #99E2D0;
+  margin: 0 -5rem 0 0;
+  width: 4rem;
+}
+.bloc_check_icon {
+  background-color: #fff;
+  border-radius: 100px;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #99E2D0;
+  font-weight: 500;
+}
+
+@-webkit-keyframes scale-down-hor-left {
+  0% {
+    transform: scaleX(1);
+    transform-origin: 0% 0%;
+  }
+  100% {
+    transform: scaleX(0.3);
+    transform-origin: 0% 0%;
+  }
+}
+@keyframes scale-down-hor-left {
+  0% {
+    transform: scaleX(1);
+    transform-origin: 0% 0%;
+  }
+  100% {
+    transform: scaleX(0.3);
+    transform-origin: 0% 0%;
+  }
+}
+@-webkit-keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes scale-up-hor-right {
+  0% {
+    transform: scaleX(0.4);
+    transform-origin: 100% 100%;
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: 100% 100%;
+  }
+}
+@keyframes scale-up-hor-right {
+  0% {
+    transform: scaleX(0.4);
+    transform-origin: 100% 100%;
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: 100% 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

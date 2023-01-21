@@ -77,6 +77,7 @@
     }
 
     &_item{
+        padding: 0.9rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -84,5 +85,158 @@
         background-color: #fff;
         border-radius: 1rem;
         box-shadow: 5px 5px 10px rgba(0,0,0,0.13);
+        overflow: hidden;
+        cursor: pointer;
+
+        &:hover{
+            .bloc_check{
+                margin: -1rem -1rem -1rem 0rem;
+                -webkit-animation: scale-up-hor-right 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                animation: scale-up-hor-right 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            }
+
+            .bloc_check_icon{
+                -webkit-animation: rotate-center 0.5s ease-in-out both;
+                animation: rotate-center 0.5s ease-in-out both;
+            }
+        }
+    }
+
+    &_text{
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem; 
+        white-space: nowrap;
+        overflow: hidden;
+        flex: 1;
+
+        &_name{
+            font-size: 16px;
+            margin: 0;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        &_desc{
+            font-size: 14px;
+            margin: 0;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+
+    &_price{
+        font-size: 0.9rem;
+        font-weight: 500;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 0 0.9rem 0 0.7rem;
+        transition-duration: 1s;
+    }
+
+    &_check{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0.5rem;
+        background-color: $color-tertiary;
+        margin: 0 -5rem 0 0;
+        width: 4rem;
+
+        &_icon{
+            background-color: #fff;
+            border-radius: 100px;
+            width: 1.5rem;
+            height: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $color-tertiary;
+            font-weight: 500;
+        }
     }
 }
+
+@-webkit-keyframes scale-down-hor-left {
+    0% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+    }
+    100% {
+      -webkit-transform: scaleX(0.3);
+              transform: scaleX(0.3);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+    }
+  }
+  @keyframes scale-down-hor-left {
+    0% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+    }
+    100% {
+      -webkit-transform: scaleX(0.3);
+              transform: scaleX(0.3);
+      -webkit-transform-origin: 0% 0%;
+              transform-origin: 0% 0%;
+    }
+  }
+  
+
+  @-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+
+@-webkit-keyframes scale-up-hor-right {
+    0% {
+      -webkit-transform: scaleX(0.4);
+              transform: scaleX(0.4);
+      -webkit-transform-origin: 100% 100%;
+              transform-origin: 100% 100%;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      -webkit-transform-origin: 100% 100%;
+              transform-origin: 100% 100%;
+    }
+  }
+  @keyframes scale-up-hor-right {
+    0% {
+      -webkit-transform: scaleX(0.4);
+              transform: scaleX(0.4);
+      -webkit-transform-origin: 100% 100%;
+              transform-origin: 100% 100%;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      -webkit-transform-origin: 100% 100%;
+              transform-origin: 100% 100%;
+    }
+  }
+  
