@@ -329,8 +329,7 @@ body {
 }
 .bloc_item:hover .bloc_check {
   margin: -1rem -1rem -1rem 0rem;
-  -webkit-animation: scale-up-hor-right 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: scale-up-hor-right 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  transition-duration: 0.5s;
 }
 .bloc_item:hover .bloc_check_icon {
   -webkit-animation: rotate-center 0.5s ease-in-out both;
@@ -371,9 +370,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 0.5rem;
   background-color: #99E2D0;
-  margin: 0 -5rem 0 0;
+  margin: -1rem -5rem -1rem 0;
   width: 4rem;
 }
 .bloc_check_icon {
@@ -444,18 +442,14 @@ body {
     transform-origin: 100% 100%;
   }
 }
-.bloc_item-1 {
-  margin: 0 0.25rem;
-}
-
-.bloc_item-2 {
+.bloc .bloc_item:nth-child(2) {
   margin: 0 0.5rem;
 }
 
-.bloc_item-3 {
+.bloc .bloc_item:nth-child(3) {
   margin: 0 0.75rem;
 }
 
-.bloc_item-4 {
+.bloc .bloc_item:nth-child(4) {
   margin: 0 1rem;
 }/*# sourceMappingURL=style.css.map */

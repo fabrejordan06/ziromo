@@ -87,12 +87,12 @@
         box-shadow: 5px 5px 10px rgba(0,0,0,0.13);
         overflow: hidden;
         cursor: pointer;
+        animation: slide-up 1s;
 
         &:hover{
             .bloc_check{
                 margin: -1rem -1rem -1rem 0rem;
-                -webkit-animation: scale-up-hor-right 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-                animation: scale-up-hor-right 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+                transition-duration: 0.5s;
             }
 
             .bloc_check_icon{
@@ -141,9 +141,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-right: 0.5rem;
         background-color: $color-tertiary;
-        margin: 0 -5rem 0 0;
+        margin: -1rem -5rem -1rem 0;
         width: 4rem;
 
         &_icon{
@@ -239,8 +238,12 @@
               transform-origin: 100% 100%;
     }
   }
-  @for $i from 1 through 4 {
-    .bloc_item-#{$i} {
-        margin:0 ($i * .25rem);
+@for $i from 1 through 3 {
+    .bloc .bloc_item:nth-of-type( #{$i}) {
+        animation-delay: ($i $ 50ms);
     }
+}
+
+@keyframes slide-up{
+
 }
