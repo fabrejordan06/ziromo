@@ -443,4 +443,19 @@ body {
     transform: scaleX(1);
     transform-origin: 100% 100%;
   }
+}
+.bloc_item-1 {
+  margin: 0 0.25rem;
+}
+
+.bloc_item-2 {
+  margin: 0 0.5rem;
+}
+
+.bloc_item-3 {
+  margin: 0 0.75rem;
+}
+
+.bloc_item-4 {
+  margin: 0 1rem;
 }/*# sourceMappingURL=style.css.map */

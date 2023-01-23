@@ -239,4 +239,8 @@
               transform-origin: 100% 100%;
     }
   }
-  
+  @for $i from 1 through 4 {
+    .bloc_item-#{$i} {
+        margin:0 ($i * .25rem);
+    }
+}
