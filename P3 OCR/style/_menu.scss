@@ -13,13 +13,20 @@
 }
 
 .menu{
-    padding: 1.1rem 1rem 1rem 1rem;
+    padding: 1.1rem 1rem 0 1rem;
     background-color: #f6f6f6;
     border-radius: 2rem 2rem 0 0;
     position: relative;
     margin: -3rem 0 0 0;    
     width: 100%;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &_main{
+        width: 100%;
+    }
 
     &_header{
         display: flex;
@@ -53,6 +60,19 @@
             opacity: 1;
             font-size: 1.3rem;
         }
+    }
+
+    &_btn{
+        color: #fff;
+        box-shadow: 0 5px 10px 0 $color-secondary;
+        border-radius: 90px;
+        background: linear-gradient(180deg, $color-secondary 0%, $color-primary 100%);
+        border: none;
+        padding: 0.9rem 3.5rem;
+        margin: 2rem 0;
+        cursor: pointer;
+        width: fit-content;
+        font-size: 0.85rem;
     }
 }
 
@@ -159,35 +179,6 @@
     }
 }
 
-@-webkit-keyframes scale-down-hor-left {
-    0% {
-      -webkit-transform: scaleX(1);
-              transform: scaleX(1);
-      -webkit-transform-origin: 0% 0%;
-              transform-origin: 0% 0%;
-    }
-    100% {
-      -webkit-transform: scaleX(0.3);
-              transform: scaleX(0.3);
-      -webkit-transform-origin: 0% 0%;
-              transform-origin: 0% 0%;
-    }
-  }
-  @keyframes scale-down-hor-left {
-    0% {
-      -webkit-transform: scaleX(1);
-              transform: scaleX(1);
-      -webkit-transform-origin: 0% 0%;
-              transform-origin: 0% 0%;
-    }
-    100% {
-      -webkit-transform: scaleX(0.3);
-              transform: scaleX(0.3);
-      -webkit-transform-origin: 0% 0%;
-              transform-origin: 0% 0%;
-    }
-  }
-  
 
   @-webkit-keyframes rotate-center {
     0% {
@@ -210,40 +201,19 @@
     }
   }
 
-@-webkit-keyframes scale-up-hor-right {
-    0% {
-      -webkit-transform: scaleX(0.4);
-              transform: scaleX(0.4);
-      -webkit-transform-origin: 100% 100%;
-              transform-origin: 100% 100%;
-    }
-    100% {
-      -webkit-transform: scaleX(1);
-              transform: scaleX(1);
-      -webkit-transform-origin: 100% 100%;
-              transform-origin: 100% 100%;
-    }
-  }
-  @keyframes scale-up-hor-right {
-    0% {
-      -webkit-transform: scaleX(0.4);
-              transform: scaleX(0.4);
-      -webkit-transform-origin: 100% 100%;
-              transform-origin: 100% 100%;
-    }
-    100% {
-      -webkit-transform: scaleX(1);
-              transform: scaleX(1);
-      -webkit-transform-origin: 100% 100%;
-              transform-origin: 100% 100%;
-    }
-  }
 @for $i from 1 through 3 {
     .bloc .bloc_item:nth-of-type( #{$i}) {
-        animation-delay: ($i $ 50ms);
+        animation-delay: ($i * 100ms);
     }
 }
 
 @keyframes slide-up{
-
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
