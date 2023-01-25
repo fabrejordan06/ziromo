@@ -164,6 +164,7 @@
         background-color: $color-tertiary;
         margin: -1rem -5rem -1rem 0;
         width: 4rem;
+        transition-duration: 1s;
 
         &_icon{
             background-color: #fff;
@@ -176,9 +177,12 @@
             color: $color-tertiary;
             font-weight: 500;
         }
+
+        &_icone i {
+            transition-duration: 1s;
+        }
     }
 }
-
 
   @-webkit-keyframes rotate-center {
     0% {

@@ -395,6 +395,7 @@ body {
   background-color: #99E2D0;
   margin: -1rem -5rem -1rem 0;
   width: 4rem;
+  transition-duration: 1s;
 }
 .bloc_check_icon {
   background-color: #fff;
@@ -406,6 +407,9 @@ body {
   align-items: center;
   color: #99E2D0;
   font-weight: 500;
+}
+.bloc_check_icone i {
+  transition-duration: 1s;
 }
 
 @-webkit-keyframes rotate-center {
