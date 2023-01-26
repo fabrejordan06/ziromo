@@ -203,15 +203,23 @@ body{
     }
 
     &_like{
-
         cursor: pointer;
-
+        font-size: 1.3rem;
+        
         &_on{
             position: absolute;
             right: 1.2rem;
             top: 1.2rem;
             color: $color-secondary;   
             opacity: 0;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
+                        
+            &:hover{
+                transition-duration: 1s;
+                opacity: 1;
+            }
         }
 
         &_off{
@@ -219,6 +227,11 @@ body{
             right: 1.2rem;
             top: 1.2rem;
             opacity: 1;
+                        
+            &:hover{
+                transition-duration: 1s;
+                opacity: 0;
+            }
         }
     }
 }

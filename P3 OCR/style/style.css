@@ -199,6 +199,7 @@ body {
 }
 .label_like {
   cursor: pointer;
+  font-size: 1.3rem;
 }
 .label_like_on {
   position: absolute;
@@ -206,12 +207,24 @@ body {
   top: 1.2rem;
   color: #FF79DA;
   opacity: 0;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
+}
+.label_like_on:hover {
+  transition-duration: 1s;
+  opacity: 1;
 }
 .label_like_off {
   position: absolute;
   right: 1.2rem;
   top: 1.2rem;
   opacity: 1;
+}
+.label_like_off:hover {
+  transition-duration: 1s;
+  opacity: 0;
 }
 
 .footer {
@@ -291,9 +304,16 @@ body {
   position: absolute;
   right: 2rem;
   top: 1.625rem;
-  color: #FF79DA;
   opacity: 0;
   font-size: 1.3rem;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
+}
+.menu_header_likeon:hover {
+  transition-duration: 1s;
+  opacity: 1;
 }
 .menu_header_likeoff {
   position: absolute;
@@ -301,6 +321,10 @@ body {
   top: 1.625rem;
   opacity: 1;
   font-size: 1.3rem;
+}
+.menu_header_likeoff:hover {
+  transition-duration: 1s;
+  opacity: 0;
 }
 .menu_btn {
   color: #fff;
@@ -445,7 +469,7 @@ body {
 
 @-webkit-keyframes slide-up {
   0% {
-    transform: translateY(20px);
+    transform: translateY(30px);
     opacity: 0;
   }
   100% {
@@ -456,7 +480,7 @@ body {
 
 @keyframes slide-up {
   0% {
-    transform: translateY(20px);
+    transform: translateY(30px);
     opacity: 0;
   }
   100% {
