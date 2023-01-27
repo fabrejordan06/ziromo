@@ -289,3 +289,58 @@ body{
 .fa-handshake-angle{
     font-size: 0.8rem;
 }
+
+.spinner{
+    height: 100%;
+    width: 100%;
+    background: #f3f3f3;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &_border{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 0.6rem solid transparent;
+        border-radius: 50%;
+        width: 8rem;
+        height: 8rem;
+        position: absolute;
+        animation: spinner-border 2s linear ;
+    }
+    &_text{
+        font-family: "Shrikhand", "sans-serif";
+        font-size: 1rem;    
+    }
+}
+
+// Animation Loading spinner //
+
+@keyframes spinner {
+    0% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes spinner_border {
+    0% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(360deg);
+        opacity: 0;
+        visibility: hidden;
+    }
+}
