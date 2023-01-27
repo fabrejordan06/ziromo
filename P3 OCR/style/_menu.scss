@@ -76,7 +76,7 @@
 
     &_btn{
         color: #fff;
-        box-shadow: 0 5px 10px 0 $color-secondary;
+        box-shadow: 0 3px 10px 0 $color-secondary;
         border-radius: 90px;
         background: linear-gradient(180deg, $color-secondary 0%, $color-primary 100%);
         border: none;
@@ -85,6 +85,11 @@
         cursor: pointer;
         width: fit-content;
         font-size: 0.85rem;
+
+        &:hover{
+            box-shadow: 0 5px 10px $color-secondary;
+            background: linear-gradient(180deg, lighten($color: $color-secondary, $amount: 5%) 0%, lighten($color: $color-primary, $amount: 5%) 100%);
+        }
     }
 }
 

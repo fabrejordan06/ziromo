@@ -30,7 +30,7 @@ body {
 }
 
 .location {
-  background-color: #e6e6e6;
+  background-color: #ebebeb;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -45,7 +45,7 @@ body {
 }
 .location_btn {
   border-style: none;
-  background-color: #e6e6e6;
+  background-color: #ebebeb;
   display: flex;
   justify-content: center;
 }
@@ -93,12 +93,16 @@ body {
 }
 .explore_btn {
   color: #fff;
-  box-shadow: 0 5px 10px 0 #FF79DA;
+  box-shadow: 0 3px 10px 0 #FF79DA;
   border-radius: 90px;
   background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
   border: none;
   padding: 0 20px;
   margin-top: 15px;
+}
+.explore_btn:hover {
+  box-shadow: 0 5px 10px #FF79DA;
+  background: linear-gradient(180deg, #ff93e1 0%, #a16be0 100%);
 }
 
 .process {
@@ -123,6 +127,13 @@ body {
   background: #f6f6f6;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.13);
   margin-left: 6px;
+}
+.process_stage:hover {
+  background: #f2eafb;
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25);
+}
+.process_stage:hover .process_stage_icon {
+  color: #9356DC;
 }
 .process_stage_number {
   width: 20px;
@@ -160,6 +171,7 @@ body {
 .label {
   background-color: #fff;
   border-radius: 1rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.13);
 }
 .label_up {
   position: relative;
@@ -328,7 +340,7 @@ body {
 }
 .menu_btn {
   color: #fff;
-  box-shadow: 0 5px 10px 0 #FF79DA;
+  box-shadow: 0 3px 10px 0 #FF79DA;
   border-radius: 90px;
   background: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
   border: none;
@@ -339,6 +351,10 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   font-size: 0.85rem;
+}
+.menu_btn:hover {
+  box-shadow: 0 5px 10px #FF79DA;
+  background: linear-gradient(180deg, #ff93e1 0%, #a16be0 100%);
 }
 
 .bloc {
