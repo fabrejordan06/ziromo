@@ -272,81 +272,82 @@ body {
   font-size: 0.8rem;
 }
 
-.spinner {
-  height: 100%;
+.loader {
+  position: fixed;
+  top: 10%;
   width: 100%;
-  background: #f3f3f3;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.spinner_border {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 0.6rem solid transparent;
-  border-radius: 50%;
-  width: 8rem;
-  height: 8rem;
-  position: absolute;
-  -webkit-animation: spinner-border 2s linear;
-          animation: spinner-border 2s linear;
-}
-.spinner_text {
+  text-align: center;
+  margin: 0;
+  padding: 0;
   font-family: "Shrikhand", "sans-serif";
-  font-size: 1rem;
+  font-size: 2.5rem;
+  color: #9356DC;
+  -webkit-animation: loader 3s linear;
+          animation: loader 3s linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.spinner {
+  -webkit-animation: spinner 2s linear infinite;
+          animation: spinner 2s linear infinite;
+  display: inline-block;
+  vertical-align: middle;
+  border: 1rem solid #f3f3f3;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+}
+
+.spinner::after {
+  content: "";
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  bottom: -1rem;
+  left: -1rem;
+  border: 1rem solid transparent;
+  border-radius: 50%;
+  border-top-color: #FF79DA;
+  border-bottom-color: #99E2D0;
 }
 
 @-webkit-keyframes spinner {
   0% {
-    opacity: 1;
-  }
-  70% {
-    opacity: 1;
+    transform: rotate(0deg);
   }
   100% {
-    opacity: 0;
-    visibility: hidden;
+    transform: rotate(360deg);
   }
 }
 
 @keyframes spinner {
   0% {
-    opacity: 1;
-  }
-  70% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-@-webkit-keyframes spinner_border {
-  0% {
-    opacity: 1;
-  }
-  70% {
-    opacity: 1;
+    transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
-    opacity: 0;
-    visibility: hidden;
   }
 }
-@keyframes spinner_border {
+@-webkit-keyframes loader {
   0% {
-    opacity: 1;
-  }
-  70% {
+    display: inline-block;
     opacity: 1;
   }
   100% {
-    transform: rotate(360deg);
+    display: none;
     opacity: 0;
-    visibility: hidden;
+  }
+}
+@keyframes loader {
+  0% {
+    display: inline-block;
+    opacity: 1;
+  }
+  100% {
+    display: none;
+    opacity: 0;
   }
 }
 .header_arrow {
