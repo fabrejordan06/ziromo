@@ -90,6 +90,7 @@ body{
         border: none;
         padding: 0 20px;
         margin-top: 15px;
+        cursor: pointer;
 
         &:hover{
             box-shadow: 0 5px 10px $color-secondary;
@@ -123,6 +124,7 @@ body{
         background: #f6f6f6;
         box-shadow: 5px 5px 10px rgba(0,0,0,0.13);
         margin-left: 6px;
+        cursor: pointer;
 
         &:hover{
             background: lighten($color: $color-primary, $amount: 35%);
@@ -276,12 +278,13 @@ body{
         flex-direction: row;
         align-items: center;
         gap: 12px;
+        cursor: pointer;
+        width: fit-content;
 
         &_text{
             margin: 0;
             font-size: 1rem;
         }
-
     }
 
 }

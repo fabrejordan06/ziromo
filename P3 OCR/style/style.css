@@ -99,6 +99,7 @@ body {
   border: none;
   padding: 0 20px;
   margin-top: 15px;
+  cursor: pointer;
 }
 .explore_btn:hover {
   box-shadow: 0 5px 10px #FF79DA;
@@ -127,6 +128,7 @@ body {
   background: #f6f6f6;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.13);
   margin-left: 6px;
+  cursor: pointer;
 }
 .process_stage:hover {
   background: #f2eafb;
@@ -262,6 +264,10 @@ body {
   flex-direction: row;
   align-items: center;
   gap: 12px;
+  cursor: pointer;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .footer_link_text {
   margin: 0;
