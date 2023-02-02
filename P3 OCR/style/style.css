@@ -363,6 +363,58 @@ body {
     padding-top: 50%;
   }
 }
+@media (min-width: 992px) {
+  .process {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .process_box {
+    flex-direction: row;
+    width: 100%;
+  }
+  .process_stage {
+    width: 100%;
+  }
+  .restaurant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .restaurant_box {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    width: 100%;
+  }
+  @-webkit-keyframes loader {
+    0% {
+      display: inline-block;
+      opacity: 1;
+      padding-top: 30%;
+    }
+    100% {
+      display: none;
+      opacity: 0;
+      visibility: hidden;
+      padding-top: 30%;
+    }
+  }
+  @keyframes loader {
+    0% {
+      display: inline-block;
+      opacity: 1;
+      padding-top: 30%;
+    }
+    100% {
+      display: none;
+      opacity: 0;
+      visibility: hidden;
+      padding-top: 30%;
+    }
+  }
+}
 .header_arrow {
   position: absolute;
   font-size: 1.2rem;
