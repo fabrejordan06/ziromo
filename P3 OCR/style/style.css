@@ -383,9 +383,8 @@ body {
   }
   .restaurant_box {
     display: grid;
-    grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 1.4rem;
     width: 100%;
   }
   @-webkit-keyframes loader {
@@ -650,5 +649,12 @@ body {
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+@media (min-width: 992px) {
+  .menu_main {
+    display: flex;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */

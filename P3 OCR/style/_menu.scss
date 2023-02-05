@@ -242,3 +242,17 @@
         opacity: 1;
     }
 }
+
+@media (min-width: 992px)
+{
+    .menu_main
+    {
+        display: flex;
+        column-gap: 1rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px)
+{
+
+}
