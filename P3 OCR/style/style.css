@@ -660,4 +660,7 @@ body {
          column-gap: 1rem;
     justify-content: center;
   }
+  .bloc {
+    width: 300px;
+  }
 }/*# sourceMappingURL=style.css.map */
