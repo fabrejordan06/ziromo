@@ -549,9 +549,6 @@ body {
   color: #99E2D0;
   font-weight: 500;
 }
-.bloc_check_icone i {
-  transition-duration: 1s;
-}
 @keyframes rotate-center {
   0% {
     transform: rotate(0);
