@@ -308,6 +308,7 @@ body{
     color: $color-primary;
     animation: loader 3s linear;
     animation-fill-mode: forwards;
+    z-index: 100;
 }
 
 .spinner{
@@ -318,7 +319,7 @@ body{
     border-radius: 50%;
     width: 2rem;
     height: 2rem;
-    position: absolute;
+    position: relative;
 }
 
 .spinner::after{
